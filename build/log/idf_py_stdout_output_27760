@@ -1,0 +1,43 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/led_strip (2.5.5)
+NOTICE: [2/2] idf (5.1.6)
+-- Project sdkconfig file C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/sdkconfig
+-- Could NOT find Threads (missing: Threads_FOUND) 
+-- App "esp32_blink" version: 1
+-- Adding linker script C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__led_strip esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/user/esp/v5.1.6/esp-idf/components/app_trace C:/Users/user/esp/v5.1.6/esp-idf/components/app_update C:/Users/user/esp/v5.1.6/esp-idf/components/bootloader C:/Users/user/esp/v5.1.6/esp-idf/components/bootloader_support C:/Users/user/esp/v5.1.6/esp-idf/components/bt C:/Users/user/esp/v5.1.6/esp-idf/components/cmock C:/Users/user/esp/v5.1.6/esp-idf/components/console C:/Users/user/esp/v5.1.6/esp-idf/components/cxx C:/Users/user/esp/v5.1.6/esp-idf/components/driver C:/Users/user/esp/v5.1.6/esp-idf/components/efuse C:/Users/user/esp/v5.1.6/esp-idf/components/esp-tls C:/Users/user/esp/v5.1.6/esp-idf/components/esp_adc C:/Users/user/esp/v5.1.6/esp-idf/components/esp_app_format C:/Users/user/esp/v5.1.6/esp-idf/components/esp_coex C:/Users/user/esp/v5.1.6/esp-idf/components/esp_common C:/Users/user/esp/v5.1.6/esp-idf/components/esp_eth C:/Users/user/esp/v5.1.6/esp-idf/components/esp_event C:/Users/user/esp/v5.1.6/esp-idf/components/esp_gdbstub C:/Users/user/esp/v5.1.6/esp-idf/components/esp_hid C:/Users/user/esp/v5.1.6/esp-idf/components/esp_http_client C:/Users/user/esp/v5.1.6/esp-idf/components/esp_http_server C:/Users/user/esp/v5.1.6/esp-idf/components/esp_https_ota C:/Users/user/esp/v5.1.6/esp-idf/components/esp_https_server C:/Users/user/esp/v5.1.6/esp-idf/components/esp_hw_support C:/Users/user/esp/v5.1.6/esp-idf/components/esp_lcd C:/Users/user/esp/v5.1.6/esp-idf/components/esp_local_ctrl C:/Users/user/esp/v5.1.6/esp-idf/components/esp_mm C:/Users/user/esp/v5.1.6/esp-idf/components/esp_netif C:/Users/user/esp/v5.1.6/esp-idf/components/esp_netif_stack C:/Users/user/esp/v5.1.6/esp-idf/components/esp_partition C:/Users/user/esp/v5.1.6/esp-idf/components/esp_phy C:/Users/user/esp/v5.1.6/esp-idf/components/esp_pm C:/Users/user/esp/v5.1.6/esp-idf/components/esp_psram C:/Users/user/esp/v5.1.6/esp-idf/components/esp_ringbuf C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom C:/Users/user/esp/v5.1.6/esp-idf/components/esp_system C:/Users/user/esp/v5.1.6/esp-idf/components/esp_timer C:/Users/user/esp/v5.1.6/esp-idf/components/esp_wifi C:/Users/user/esp/v5.1.6/esp-idf/components/espcoredump C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/managed_components/espressif__led_strip C:/Users/user/esp/v5.1.6/esp-idf/components/esptool_py C:/Users/user/esp/v5.1.6/esp-idf/components/fatfs C:/Users/user/esp/v5.1.6/esp-idf/components/freertos C:/Users/user/esp/v5.1.6/esp-idf/components/hal C:/Users/user/esp/v5.1.6/esp-idf/components/heap C:/Users/user/esp/v5.1.6/esp-idf/components/http_parser C:/Users/user/esp/v5.1.6/esp-idf/components/idf_test C:/Users/user/esp/v5.1.6/esp-idf/components/ieee802154 C:/Users/user/esp/v5.1.6/esp-idf/components/json C:/Users/user/esp/v5.1.6/esp-idf/components/log C:/Users/user/esp/v5.1.6/esp-idf/components/lwip C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/main C:/Users/user/esp/v5.1.6/esp-idf/components/mbedtls C:/Users/user/esp/v5.1.6/esp-idf/components/mqtt C:/Users/user/esp/v5.1.6/esp-idf/components/newlib C:/Users/user/esp/v5.1.6/esp-idf/components/nvs_flash C:/Users/user/esp/v5.1.6/esp-idf/components/openthread C:/Users/user/esp/v5.1.6/esp-idf/components/partition_table C:/Users/user/esp/v5.1.6/esp-idf/components/perfmon C:/Users/user/esp/v5.1.6/esp-idf/components/protobuf-c C:/Users/user/esp/v5.1.6/esp-idf/components/protocomm C:/Users/user/esp/v5.1.6/esp-idf/components/pthread C:/Users/user/esp/v5.1.6/esp-idf/components/sdmmc C:/Users/user/esp/v5.1.6/esp-idf/components/soc C:/Users/user/esp/v5.1.6/esp-idf/components/spi_flash C:/Users/user/esp/v5.1.6/esp-idf/components/spiffs C:/Users/user/esp/v5.1.6/esp-idf/components/tcp_transport C:/Users/user/esp/v5.1.6/esp-idf/components/ulp C:/Users/user/esp/v5.1.6/esp-idf/components/unity C:/Users/user/esp/v5.1.6/esp-idf/components/usb C:/Users/user/esp/v5.1.6/esp-idf/components/vfs C:/Users/user/esp/v5.1.6/esp-idf/components/wear_levelling C:/Users/user/esp/v5.1.6/esp-idf/components/wifi_provisioning C:/Users/user/esp/v5.1.6/esp-idf/components/wpa_supplicant C:/Users/user/esp/v5.1.6/esp-idf/components/xtensa
+-- Configuring done (12.4s)
+-- Generating done (3.8s)
+-- Build files have been written to: C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\user\Desktop\My Projects\IOT-FinalProject\esp32_blink\build\bootloader\esp-idf\esptool_py" && C:\Users\user\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.1.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/bootloader/bootloader.bin""
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/11] Linking C static library esp-idf\main\libmain.a
+[6/11] Generating ld/sections.ld
+[7/11] Building C object CMakeFiles/esp32_blink.elf.dir/project_elf_src_esp32.c.obj
+[8/11] Linking CXX executable esp32_blink.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/esp32_blink.bin
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\user\Desktop\My Projects\IOT-FinalProject\esp32_blink\build\esp-idf\esptool_py" && C:\Users\user\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.1.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/partition_table/partition-table.bin" "C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/esp32_blink.bin""
+esp32_blink.bin binary size 0xd7860 bytes. Smallest app partition is 0x100000 bytes. 0x287a0 bytes (16%) free.

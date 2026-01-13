@@ -1,0 +1,101 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/led_strip (2.5.5)
+NOTICE: [2/2] idf (5.1.6)
+-- Project sdkconfig file C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/sdkconfig
+-- Could NOT find Threads (missing: Threads_FOUND) 
+-- App "esp32_blink" version: 1
+-- Adding linker script C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/user/esp/v5.1.6/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__led_strip esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/user/esp/v5.1.6/esp-idf/components/app_trace C:/Users/user/esp/v5.1.6/esp-idf/components/app_update C:/Users/user/esp/v5.1.6/esp-idf/components/bootloader C:/Users/user/esp/v5.1.6/esp-idf/components/bootloader_support C:/Users/user/esp/v5.1.6/esp-idf/components/bt C:/Users/user/esp/v5.1.6/esp-idf/components/cmock C:/Users/user/esp/v5.1.6/esp-idf/components/console C:/Users/user/esp/v5.1.6/esp-idf/components/cxx C:/Users/user/esp/v5.1.6/esp-idf/components/driver C:/Users/user/esp/v5.1.6/esp-idf/components/efuse C:/Users/user/esp/v5.1.6/esp-idf/components/esp-tls C:/Users/user/esp/v5.1.6/esp-idf/components/esp_adc C:/Users/user/esp/v5.1.6/esp-idf/components/esp_app_format C:/Users/user/esp/v5.1.6/esp-idf/components/esp_coex C:/Users/user/esp/v5.1.6/esp-idf/components/esp_common C:/Users/user/esp/v5.1.6/esp-idf/components/esp_eth C:/Users/user/esp/v5.1.6/esp-idf/components/esp_event C:/Users/user/esp/v5.1.6/esp-idf/components/esp_gdbstub C:/Users/user/esp/v5.1.6/esp-idf/components/esp_hid C:/Users/user/esp/v5.1.6/esp-idf/components/esp_http_client C:/Users/user/esp/v5.1.6/esp-idf/components/esp_http_server C:/Users/user/esp/v5.1.6/esp-idf/components/esp_https_ota C:/Users/user/esp/v5.1.6/esp-idf/components/esp_https_server C:/Users/user/esp/v5.1.6/esp-idf/components/esp_hw_support C:/Users/user/esp/v5.1.6/esp-idf/components/esp_lcd C:/Users/user/esp/v5.1.6/esp-idf/components/esp_local_ctrl C:/Users/user/esp/v5.1.6/esp-idf/components/esp_mm C:/Users/user/esp/v5.1.6/esp-idf/components/esp_netif C:/Users/user/esp/v5.1.6/esp-idf/components/esp_netif_stack C:/Users/user/esp/v5.1.6/esp-idf/components/esp_partition C:/Users/user/esp/v5.1.6/esp-idf/components/esp_phy C:/Users/user/esp/v5.1.6/esp-idf/components/esp_pm C:/Users/user/esp/v5.1.6/esp-idf/components/esp_psram C:/Users/user/esp/v5.1.6/esp-idf/components/esp_ringbuf C:/Users/user/esp/v5.1.6/esp-idf/components/esp_rom C:/Users/user/esp/v5.1.6/esp-idf/components/esp_system C:/Users/user/esp/v5.1.6/esp-idf/components/esp_timer C:/Users/user/esp/v5.1.6/esp-idf/components/esp_wifi C:/Users/user/esp/v5.1.6/esp-idf/components/espcoredump C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/managed_components/espressif__led_strip C:/Users/user/esp/v5.1.6/esp-idf/components/esptool_py C:/Users/user/esp/v5.1.6/esp-idf/components/fatfs C:/Users/user/esp/v5.1.6/esp-idf/components/freertos C:/Users/user/esp/v5.1.6/esp-idf/components/hal C:/Users/user/esp/v5.1.6/esp-idf/components/heap C:/Users/user/esp/v5.1.6/esp-idf/components/http_parser C:/Users/user/esp/v5.1.6/esp-idf/components/idf_test C:/Users/user/esp/v5.1.6/esp-idf/components/ieee802154 C:/Users/user/esp/v5.1.6/esp-idf/components/json C:/Users/user/esp/v5.1.6/esp-idf/components/log C:/Users/user/esp/v5.1.6/esp-idf/components/lwip C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/main C:/Users/user/esp/v5.1.6/esp-idf/components/mbedtls C:/Users/user/esp/v5.1.6/esp-idf/components/mqtt C:/Users/user/esp/v5.1.6/esp-idf/components/newlib C:/Users/user/esp/v5.1.6/esp-idf/components/nvs_flash C:/Users/user/esp/v5.1.6/esp-idf/components/openthread C:/Users/user/esp/v5.1.6/esp-idf/components/partition_table C:/Users/user/esp/v5.1.6/esp-idf/components/perfmon C:/Users/user/esp/v5.1.6/esp-idf/components/protobuf-c C:/Users/user/esp/v5.1.6/esp-idf/components/protocomm C:/Users/user/esp/v5.1.6/esp-idf/components/pthread C:/Users/user/esp/v5.1.6/esp-idf/components/sdmmc C:/Users/user/esp/v5.1.6/esp-idf/components/soc C:/Users/user/esp/v5.1.6/esp-idf/components/spi_flash C:/Users/user/esp/v5.1.6/esp-idf/components/spiffs C:/Users/user/esp/v5.1.6/esp-idf/components/tcp_transport C:/Users/user/esp/v5.1.6/esp-idf/components/ulp C:/Users/user/esp/v5.1.6/esp-idf/components/unity C:/Users/user/esp/v5.1.6/esp-idf/components/usb C:/Users/user/esp/v5.1.6/esp-idf/components/vfs C:/Users/user/esp/v5.1.6/esp-idf/components/wear_levelling C:/Users/user/esp/v5.1.6/esp-idf/components/wifi_provisioning C:/Users/user/esp/v5.1.6/esp-idf/components/wpa_supplicant C:/Users/user/esp/v5.1.6/esp-idf/components/xtensa
+-- Configuring done (18.2s)
+-- Generating done (3.0s)
+-- Build files have been written to: C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build
+[1/6] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\user\Desktop\My Projects\IOT-FinalProject\esp32_blink\build\esp-idf\esptool_py" && C:\Users\user\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.1.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/partition_table/partition-table.bin" "C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/esp32_blink.bin""
+esp32_blink.bin binary size 0xd7860 bytes. Smallest app partition is 0x100000 bytes. 0x287a0 bytes (16%) free.
+[2/6] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\user\Desktop\My Projects\IOT-FinalProject\esp32_blink\build\bootloader\esp-idf\esptool_py" && C:\Users\user\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.1.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build/bootloader/bootloader.bin""
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[3/6] No install step for 'bootloader'
+[4/6] Completed 'bootloader'
+[4/6] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\user\esp\v5.1.6\esp-idf\components\esptool_py && C:\Users\user\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/user/esp/v5.1.6/esp-idf -D SERIAL_TOOL=C:/Users/user/.espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/Users/user/esp/v5.1.6/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/user/Desktop/My Projects/IOT-FinalProject/esp32_blink/build" -P C:/Users/user/esp/v5.1.6/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32_blink.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port COM3
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 84:1f:e8:17:74:b0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e7fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26784 bytes to 16790...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007691... (100 %)
+Wrote 26784 bytes (16790 compressed) at 0x00001000 in 0.5 seconds (effective 416.6 kbit/s)...
+Hash of data verified.
+Compressed 882784 bytes to 562472...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c13a... (5 %)
+Writing at 0x0002584d... (8 %)
+Writing at 0x00030eed... (11 %)
+Writing at 0x00036809... (14 %)
+Writing at 0x0003c42f... (17 %)
+Writing at 0x00041eb5... (20 %)
+Writing at 0x00047b4a... (22 %)
+Writing at 0x0004d645... (25 %)
+Writing at 0x00053bdc... (28 %)
+Writing at 0x00058f73... (31 %)
+Writing at 0x0005e30d... (34 %)
+Writing at 0x0006386a... (37 %)
+Writing at 0x00068c27... (40 %)
+Writing at 0x0006e327... (42 %)
+Writing at 0x00073b24... (45 %)
+Writing at 0x00079b4b... (48 %)
+Writing at 0x0007f56b... (51 %)
+Writing at 0x00084a1c... (54 %)
+Writing at 0x0008a1b0... (57 %)
+Writing at 0x0008fc20... (60 %)
+Writing at 0x00095213... (62 %)
+Writing at 0x0009ac14... (65 %)
+Writing at 0x000a0c5c... (68 %)
+Writing at 0x000a66ed... (71 %)
+Writing at 0x000abe4f... (74 %)
+Writing at 0x000b17eb... (77 %)
+Writing at 0x000b70c4... (80 %)
+Writing at 0x000bfa3a... (82 %)
+Writing at 0x000c8295... (85 %)
+Writing at 0x000cdf1c... (88 %)
+Writing at 0x000d525b... (91 %)
+Writing at 0x000dab40... (94 %)
+Writing at 0x000e064d... (97 %)
+Writing at 0x000e5915... (100 %)
+Wrote 882784 bytes (562472 compressed) at 0x00010000 in 12.8 seconds (effective 553.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1370.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,275 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 23 2025 02:00:03[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e838h (124984) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002e860 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0002e86c vaddr=3ffb0000 size=017ach (  6060) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9ea8ch (649868) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000ceab4 vaddr=3ffb17ac size=024cch (  9420) load[0m
+[0;32mI (400) esp_image: segment 5: paddr=000d0f88 vaddr=40080000 size=16948h ( 92488) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu up.[0m
+[0;32mI (465) cpu_start: Starting app cpu, entry point is 0x400813d0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     esp32_blink[0m
+[0;32mI (492) cpu_start: App version:      1[0m
+[0;32mI (496) cpu_start: Compile time:     Dec 23 2025 01:58:40[0m
+[0;32mI (502) cpu_start: ELF file SHA256:  ec451406a49744ce...[0m
+[0;32mI (508) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (513) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (518) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (523) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (528) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (535) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (541) heap_init: At 3FFB83A8 len 00027C58 (159 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (553) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 40096948 len 000096B8 (37 KiB): IRAM[0m
+[0;32mI (568) spi_flash: detected chip: generic[0m
+[0;32mI (571) spi_flash: flash io: dio[0m
+[0;33mW (575) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (589) app_start: Starting scheduler on CPU0[0m
+[0;32mI (593) app_start: Starting scheduler on CPU1[0m
+[0;32mI (593) main_task: Started on CPU0[0m
+[0;32mI (603) main_task: Calling app_main()[0m
+Smart Canopy System Started
+[0;32mI (643) wifi:wifi driver task: 3ffc0490, prio:23, stack:6656, core=0[0m
+[0;32mI (653) wifi:wifi firmware version: 02461b5[0m
+[0;32mI (653) wifi:wifi certification version: v7.0[0m
+[0;32mI (653) wifi:config NVS flash: enabled[0m
+[0;32mI (653) wifi:config nano formating: disabled[0m
+[0;32mI (653) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (663) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (663) wifi:Init management short buffer num: 32[0m
+[0;32mI (673) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (673) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (683) wifi:Init static rx buffer num: 10[0m
+[0;32mI (683) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (683) wifi_init: rx ba win: 6[0m
+[0;32mI (693) wifi_init: tcpip mbox: 32[0m
+[0;32mI (693) wifi_init: udp mbox: 6[0m
+[0;32mI (693) wifi_init: tcp mbox: 6[0m
+[0;32mI (703) wifi_init: tcp tx win: 5760[0m
+[0;32mI (703) wifi_init: tcp rx win: 5760[0m
+[0;32mI (713) wifi_init: tcp mss: 1440[0m
+[0;32mI (713) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (723) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (723) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (813) wifi:mode : sta (84:1f:e8:17:74:b0)[0m
+[0;32mI (813) wifi:enable tsf[0m
+Loop running...
+E=782 W=484  | SunDir=0 | Tilt=92[0;31mE (5813) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5813) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5823) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=829 W=473  | SunDir=0 | Tilt=94[0;31mE (20833) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20833) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20843) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=844 W=466  | SunDir=0 | Tilt=97[0;31mE (35853) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35853) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35863) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=863 W=471  | SunDir=0 | Tilt=100[0;31mE (50873) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (50873) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (50883) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=896 W=469  | SunDir=0 | Tilt=103[0;31mE (65893) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (65893) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (65903) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=955 W=471  | SunDir=0 | Tilt=107[0;31mE (80913) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (80913) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (80923) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=982 W=470  | SunDir=0 | Tilt=111[0;31mE (95933) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (95933) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (95943) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1136 W=477  | SunDir=0 | Tilt=116[0;31mE (110953) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (110953) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110963) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1083 W=478  | SunDir=0 | Tilt=121[0;31mE (125973) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (125973) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (125983) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1063 W=472  | SunDir=0 | Tilt=125[0;31mE (140993) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (140993) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (141003) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1052 W=471  | SunDir=0 | Tilt=129[0;31mE (156013) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (156013) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (156023) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1097 W=487  | SunDir=0 | Tilt=134[0;31mE (171033) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (171033) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (171043) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1121 W=496  | SunDir=0 | Tilt=139[0;31mE (186053) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (186053) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (186063) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1168 W=509  | SunDir=0 | Tilt=144[0;31mE (201073) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (201073) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (201083) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1199 W=527  | SunDir=0 | Tilt=149[0;31mE (216093) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (216093) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (216103) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1250 W=539  | SunDir=0 | Tilt=154[0;31mE (231113) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (231113) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (231123) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1243 W=546  | SunDir=0 | Tilt=159[0;31mE (246133) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (246133) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (246143) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1274 W=566  | SunDir=0 | Tilt=164[0;31mE (261153) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261153) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (261163) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1270 W=593  | SunDir=0 | Tilt=169[0;31mE (276173) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (276173) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (276183) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1253 W=623  | SunDir=0 | Tilt=174[0;31mE (291193) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (291193) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (291203) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=0 W=693  | SunDir=2 | Tilt=169[0;31mE (306213) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (306213) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (306223) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=0 W=650  | SunDir=2 | Tilt=164[0;31mE (321233) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (321233) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (321243) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1610 W=624  | SunDir=0 | Tilt=172[0;31mE (336253) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (336253) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (336263) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=237 W=1899  | SunDir=2 | Tilt=159[0;31mE (351273) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (351273) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (351283) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=368 W=2195  | SunDir=2 | Tilt=144[0;31mE (366293) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (366293) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (366303) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=401 W=1791  | SunDir=2 | Tilt=133[0;31mE (381313) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (381313) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (381323) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1162 W=1837  | SunDir=2 | Tilt=128[0;31mE (396333) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (396333) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (396343) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=496 W=1613  | SunDir=2 | Tilt=119[0;31mE (411353) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (411353) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (411363) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2078 W=42  | SunDir=0 | Tilt=135[0;31mE (426373) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (426373) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (426383) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1968 W=7  | SunDir=0 | Tilt=151[0;31mE (441393) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (441393) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (441403) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1276 W=551  | SunDir=0 | Tilt=157[0;31mE (456413) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (456413) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (456423) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1295 W=555  | SunDir=0 | Tilt=163[0;31mE (471433) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (471433) transport_base: Failed to open a new connection: 32769

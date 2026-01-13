@@ -1,0 +1,1778 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 23 2025 02:00:03[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e838h (124984) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002e860 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0002e86c vaddr=3ffb0000 size=017ach (  6060) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9ea5ch (649820) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000cea84 vaddr=3ffb17ac size=024bch (  9404) load[0m
+[0;32mI (400) esp_image: segment 5: paddr=000d0f48 vaddr=40080000 size=16948h ( 92488) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu up.[0m
+[0;32mI (465) cpu_start: Starting app cpu, entry point is 0x400813d0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     esp32_blink[0m
+[0;32mI (492) cpu_start: App version:      1[0m
+[0;32mI (496) cpu_start: Compile time:     Dec 23 2025 01:58:40[0m
+[0;32mI (502) cpu_start: ELF file SHA256:  986cd56cda68531c...[0m
+[0;32mI (508) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (513) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (518) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (523) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (528) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (535) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (541) heap_init: At 3FFB8398 len 00027C68 (159 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (553) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 40096948 len 000096B8 (37 KiB): IRAM[0m
+[0;32mI (568) spi_flash: detected chip: generic[0m
+[0;32mI (571) spi_flash: flash io: dio[0m
+[0;33mW (575) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (589) app_start: Starting scheduler on CPU0[0m
+[0;32mI (593) app_start: Starting scheduler on CPU1[0m
+[0;32mI (593) main_task: Started on CPU0[0m
+[0;32mI (603) main_task: Calling app_main()[0m
+Smart Canopy System Started
+[0;32mI (643) wifi:wifi driver task: 3ffc0480, prio:23, stack:6656, core=0[0m
+[0;32mI (653) wifi:wifi firmware version: 02461b5[0m
+[0;32mI (653) wifi:wifi certification version: v7.0[0m
+[0;32mI (653) wifi:config NVS flash: enabled[0m
+[0;32mI (653) wifi:config nano formating: disabled[0m
+[0;32mI (653) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (663) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (663) wifi:Init management short buffer num: 32[0m
+[0;32mI (673) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (673) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (683) wifi:Init static rx buffer num: 10[0m
+[0;32mI (683) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (683) wifi_init: rx ba win: 6[0m
+[0;32mI (693) wifi_init: tcpip mbox: 32[0m
+[0;32mI (693) wifi_init: udp mbox: 6[0m
+[0;32mI (693) wifi_init: tcp mbox: 6[0m
+[0;32mI (703) wifi_init: tcp tx win: 5760[0m
+[0;32mI (703) wifi_init: tcp rx win: 5760[0m
+[0;32mI (713) wifi_init: tcp mss: 1440[0m
+[0;32mI (713) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (723) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (723) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (813) wifi:mode : sta (84:1f:e8:17:74:b0)[0m
+[0;32mI (813) wifi:enable tsf[0m
+Loop running...
+E=860 W=389  | SunDir=0 | Tilt=30[0;31mE (5823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=0 W=917  | SunDir=2 | Tilt=150[0;31mE (20843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=773 W=429  | SunDir=0 | Tilt=30[0;31mE (35863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=343 W=997  | SunDir=2 | Tilt=150[0;31mE (50883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (50883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (50893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=704 W=411  | SunDir=0 | Tilt=30[0;31mE (65903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (65903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (65913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=417 W=931  | SunDir=2 | Tilt=150[0;31mE (80923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (80923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (80933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1081 W=721  | SunDir=0 | Tilt=30[0;31mE (95943) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (95943) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (95953) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1530 W=1134  | SunDir=0 | Tilt=30[0;31mE (110963) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (110963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110973) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1457 W=1130  | SunDir=0 | Tilt=30[0;31mE (125983) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (125983) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (125993) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=496 W=625  | SunDir=1 | Tilt=90[0;31mE (141003) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (141003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (141013) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=424  | SunDir=0 | Tilt=30[0;31mE (156023) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (156023) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (156033) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=461 W=976  | SunDir=2 | Tilt=150[0;31mE (171043) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (171043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (171053) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=662 W=445  | SunDir=0 | Tilt=30[0;31mE (186063) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (186063) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (186073) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=0 W=991  | SunDir=2 | Tilt=150[0;31mE (201083) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (201083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (201093) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1953 W=174  | SunDir=0 | Tilt=30[0;31mE (216103) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (216103) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (216113) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=593 W=549  | SunDir=1 | Tilt=90[0;31mE (231123) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (231123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (231133) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=893 W=404  | SunDir=0 | Tilt=30[0;31mE (246143) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (246143) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (246153) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=567 W=602  | SunDir=1 | Tilt=90[0;31mE (261163) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (261173) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=626 W=413  | SunDir=0 | Tilt=30[0;31mE (276183) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (276183) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (276193) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=507 W=613  | SunDir=1 | Tilt=90[0;31mE (291203) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (291203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (291213) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=627 W=907  | SunDir=2 | Tilt=150[0;31mE (306223) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (306223) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (306233) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2165 W=143  | SunDir=0 | Tilt=30[0;31mE (321243) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (321243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (321253) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=0 W=1404  | SunDir=2 | Tilt=150[0;31mE (336263) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (336263) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (336273) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=949 W=249  | SunDir=0 | Tilt=30[0;31mE (351283) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (351283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (351293) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=235 W=668  | SunDir=2 | Tilt=150[0;31mE (366303) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (366303) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (366313) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=30 W=1763  | SunDir=2 | Tilt=150[0;31mE (381323) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (381323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (381333) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=53 W=1764  | SunDir=2 | Tilt=150[0;31mE (396343) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (396343) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (396353) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1013 W=463  | SunDir=0 | Tilt=30[0;31mE (411363) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (411363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (411373) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=525 W=723  | SunDir=2 | Tilt=150[0;31mE (426383) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (426383) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (426393) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=789 W=439  | SunDir=0 | Tilt=30[0;31mE (441403) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (441403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (441413) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=511 W=703  | SunDir=2 | Tilt=150[0;31mE (456423) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (456423) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (456433) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=784 W=454  | SunDir=0 | Tilt=30[0;31mE (471443) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (471443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (471453) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=508 W=705  | SunDir=2 | Tilt=150[0;31mE (486463) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (486463) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (486473) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=784 W=443  | SunDir=0 | Tilt=30[0;31mE (501483) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (501483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (501493) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=509 W=702  | SunDir=2 | Tilt=150[0;31mE (516503) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (516503) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (516513) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=818 W=455  | SunDir=0 | Tilt=30[0;31mE (531523) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (531523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (531533) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=510 W=704  | SunDir=2 | Tilt=150[0;31mE (546543) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (546543) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (546553) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=943 W=464  | SunDir=0 | Tilt=30[0;31mE (561563) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (561563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (561573) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1072 W=976  | SunDir=1 | Tilt=90[0;31mE (576583) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (576583) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (576593) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1090 W=2451  | SunDir=2 | Tilt=150[0;31mE (591603) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (591603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (591613) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2039 W=474  | SunDir=0 | Tilt=30[0;31mE (606623) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (606623) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (606633) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2879 W=2144  | SunDir=0 | Tilt=30[0;31mE (621643) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (621643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (621653) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=3104 W=2077  | SunDir=0 | Tilt=30[0;31mE (636663) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (636663) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (636673) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=3306 W=1932  | SunDir=0 | Tilt=30[0;31mE (651683) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (651683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (651693) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=637 W=649  | SunDir=1 | Tilt=90[0;31mE (666703) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (666703) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (666713) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2127 W=417  | SunDir=0 | Tilt=30[0;31mE (681723) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (681723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (681733) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2346 W=583  | SunDir=0 | Tilt=30[0;31mE (696743) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (696743) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (696753) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=706 W=1837  | SunDir=2 | Tilt=150[0;31mE (711763) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (711763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (711773) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1257 W=507  | SunDir=0 | Tilt=30[0;31mE (726783) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (726783) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (726793) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=606 W=573  | SunDir=1 | Tilt=90[0;31mE (741803) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (741803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (741813) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=705 W=414  | SunDir=0 | Tilt=30[0;31mE (756823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (756823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (756833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=560 W=573  | SunDir=1 | Tilt=90[0;31mE (771843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (771843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (771853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=694 W=416  | SunDir=0 | Tilt=30[0;31mE (786863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (786863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (786873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=558 W=568  | SunDir=1 | Tilt=90[0;31mE (801883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (801883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (801893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=705 W=416  | SunDir=0 | Tilt=30[0;31mE (816903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (816903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (816913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=544 W=559  | SunDir=1 | Tilt=90[0;31mE (831923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (831923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (831933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2208 W=415  | SunDir=0 | Tilt=30[0;31mE (846943) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (846943) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (846953) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=622 W=795  | SunDir=2 | Tilt=150[0;31mE (861963) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (861963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (861973) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=951 W=549  | SunDir=0 | Tilt=30[0;31mE (876983) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (876983) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (876993) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=599 W=848  | SunDir=2 | Tilt=150[0;31mE (892003) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (892003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (892013) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=986 W=567  | SunDir=0 | Tilt=30[0;31mE (907023) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (907023) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (907033) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=613 W=859  | SunDir=2 | Tilt=150[0;31mE (922043) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (922043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (922053) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=949 W=550  | SunDir=0 | Tilt=30[0;31mE (937063) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (937063) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (937073) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=594 W=847  | SunDir=2 | Tilt=150[0;31mE (952083) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (952083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (952093) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1034 W=511  | SunDir=0 | Tilt=30[0;31mE (967103) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (967103) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (967113) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=697 W=2113  | SunDir=2 | Tilt=150[0;31mE (982123) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (982123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (982133) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1594 W=499  | SunDir=0 | Tilt=30[0;31mE (997143) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (997143) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (997153) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=601 W=557  | SunDir=1 | Tilt=90[0;31mE (1012163) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1012163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1012173) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=823 W=419  | SunDir=0 | Tilt=30[0;31mE (1027183) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1027183) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1027193) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=592 W=560  | SunDir=1 | Tilt=90[0;31mE (1042203) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1042203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1042213) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=803 W=386  | SunDir=0 | Tilt=30[0;31mE (1057223) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1057223) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1057233) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=582 W=554  | SunDir=1 | Tilt=90[0;31mE (1072243) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1072243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1072253) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=798 W=386  | SunDir=0 | Tilt=30[0;31mE (1087263) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1087263) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1087273) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=499 W=511  | SunDir=1 | Tilt=90[0;31mE (1102283) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1102283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1102293) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=603 W=383  | SunDir=0 | Tilt=30[0;31mE (1117303) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1117303) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1117313) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=525 W=509  | SunDir=1 | Tilt=90[0;31mE (1132323) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1132323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1132333) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=619 W=392  | SunDir=0 | Tilt=30[0;31mE (1147343) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1147343) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1147353) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=507 W=502  | SunDir=1 | Tilt=90[0;31mE (1162363) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1162363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1162373) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=614 W=389  | SunDir=0 | Tilt=30[0;31mE (1177383) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1177383) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1177393) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=511 W=501  | SunDir=1 | Tilt=90[0;31mE (1192403) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1192403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1192413) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=626 W=403  | SunDir=0 | Tilt=30[0;31mE (1207423) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1207423) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1207433) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=738 W=505  | SunDir=0 | Tilt=30[0;31mE (1222443) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1222443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1222453) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=534 W=499  | SunDir=1 | Tilt=90[0;31mE (1237463) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1237463) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1237473) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=711 W=395  | SunDir=0 | Tilt=30[0;31mE (1252483) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1252483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1252493) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=544 W=510  | SunDir=1 | Tilt=90[0;31mE (1267503) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1267503) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1267513) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=671 W=393  | SunDir=0 | Tilt=30[0;31mE (1282523) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1282523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1282533) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=511 W=496  | SunDir=1 | Tilt=90[0;31mE (1297543) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1297543) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1297553) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=657 W=375  | SunDir=0 | Tilt=30[0;31mE (1312563) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1312563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1312573) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=511 W=490  | SunDir=1 | Tilt=90[0;31mE (1327583) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1327583) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1327593) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=659 W=369  | SunDir=0 | Tilt=30[0;31mE (1342603) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1342603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1342613) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=525 W=490  | SunDir=1 | Tilt=90[0;31mE (1357623) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1357623) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1357633) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=627 W=348  | SunDir=0 | Tilt=30[0;31mE (1372643) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1372643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1372653) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=501 W=479  | SunDir=1 | Tilt=90[0;31mE (1387663) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1387663) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1387673) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=368  | SunDir=0 | Tilt=30[0;31mE (1402683) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1402683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1402693) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=511 W=487  | SunDir=1 | Tilt=90[0;31mE (1417703) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1417703) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1417713) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=784 W=378  | SunDir=0 | Tilt=30[0;31mE (1432723) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1432723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1432733) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=509 W=478  | SunDir=1 | Tilt=90[0;31mE (1447743) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1447743) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1447753) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=916 W=387  | SunDir=0 | Tilt=30[0;31mE (1462763) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1462763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1462773) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=533 W=493  | SunDir=1 | Tilt=90[0;31mE (1477783) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1477783) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1477793) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=808 W=375  | SunDir=0 | Tilt=30[0;31mE (1492803) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1492803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1492813) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=543 W=490  | SunDir=1 | Tilt=90[0;31mE (1507823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1507823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1507833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=762 W=372  | SunDir=0 | Tilt=30[0;31mE (1522843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1522843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1522853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=509 W=464  | SunDir=1 | Tilt=90[0;31mE (1537863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1537863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1537873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=782 W=370  | SunDir=0 | Tilt=30[0;31mE (1552883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1552883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1552893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=511 W=470  | SunDir=1 | Tilt=90[0;31mE (1567903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1567903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1567913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=786 W=378  | SunDir=0 | Tilt=30[0;31mE (1582923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1582923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1582933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=542 W=489  | SunDir=1 | Tilt=90[0;31mE (1597943) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1597943) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1597953) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=784 W=377  | SunDir=0 | Tilt=30[0;31mE (1612963) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1612963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1612973) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=559 W=464  | SunDir=1 | Tilt=90[0;31mE (1627983) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1627983) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1627993) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=883 W=378  | SunDir=0 | Tilt=30[0;31mE (1643003) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1643003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1643013) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=651 W=487  | SunDir=0 | Tilt=30[0;31mE (1658023) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1658023) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1658033) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=587 W=494  | SunDir=1 | Tilt=90[0;31mE (1673043) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1673043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1673053) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=912 W=389  | SunDir=0 | Tilt=30[0;31mE (1688063) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1688063) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1688073) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=593 W=496  | SunDir=1 | Tilt=90[0;31mE (1703083) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1703083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1703093) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=883 W=373  | SunDir=0 | Tilt=30[0;31mE (1718103) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1718103) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1718113) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=557 W=469  | SunDir=1 | Tilt=90[0;31mE (1733123) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1733123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1733133) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1120 W=379  | SunDir=0 | Tilt=30[0;31mE (1748143) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1748143) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1748153) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=560 W=464  | SunDir=1 | Tilt=90[0;31mE (1763163) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1763163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1763173) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=930 W=367  | SunDir=0 | Tilt=30[0;31mE (1778183) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1778183) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1778193) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=559 W=455  | SunDir=1 | Tilt=90[0;31mE (1793203) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1793203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1793213) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=945 W=383  | SunDir=0 | Tilt=30[0;31mE (1808223) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1808223) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1808233) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=577 W=541  | SunDir=1 | Tilt=90[0;31mE (1823243) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1823243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1823253) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=906 W=393  | SunDir=0 | Tilt=30[0;31mE (1838263) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1838263) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1838273) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=719 W=498  | SunDir=0 | Tilt=30[0;31mE (1853283) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1853283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1853293) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=607 W=509  | SunDir=1 | Tilt=90[0;31mE (1868303) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1868303) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1868313) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=887 W=384  | SunDir=0 | Tilt=30[0;31mE (1883323) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1883323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1883333) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=622 W=497  | SunDir=1 | Tilt=90[0;31mE (1898343) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1898343) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1898353) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=868 W=387  | SunDir=0 | Tilt=30[0;31mE (1913363) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1913363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1913373) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=624 W=498  | SunDir=1 | Tilt=90[0;31mE (1928383) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1928383) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1928393) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=901 W=394  | SunDir=0 | Tilt=30[0;31mE (1943403) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1943403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1943413) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=610 W=495  | SunDir=1 | Tilt=90[0;31mE (1958423) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1958423) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1958433) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=800 W=385  | SunDir=0 | Tilt=30[0;31mE (1973443) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1973443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1973453) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=567 W=481  | SunDir=1 | Tilt=90[0;31mE (1988463) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1988463) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1988473) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=866 W=377  | SunDir=0 | Tilt=30[0;31mE (2003483) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2003483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2003493) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=573 W=467  | SunDir=1 | Tilt=90[0;31mE (2018503) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2018503) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2018513) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=844 W=364  | SunDir=0 | Tilt=30[0;31mE (2033523) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2033523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2033533) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=620 W=502  | SunDir=1 | Tilt=90[0;31mE (2048543) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2048543) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2048553) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=713 W=374  | SunDir=0 | Tilt=30[0;31mE (2063563) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2063563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2063573) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=557 W=493  | SunDir=1 | Tilt=90[0;31mE (2078583) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2078583) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2078593) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=847 W=366  | SunDir=0 | Tilt=30[0;31mE (2093603) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2093603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2093613) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=599 W=494  | SunDir=1 | Tilt=90[0;31mE (2108623) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2108623) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2108633) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1146 W=371  | SunDir=0 | Tilt=30[0;31mE (2123643) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2123643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2123653) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=614 W=497  | SunDir=1 | Tilt=90[0;31mE (2138663) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2138663) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2138673) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=862 W=355  | SunDir=0 | Tilt=30[0;31mE (2153683) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2153683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2153693) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=629 W=525  | SunDir=1 | Tilt=90[0;31mE (2168703) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2168703) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2168713) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=357  | SunDir=0 | Tilt=30[0;31mE (2183723) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2183723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2183733) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=623 W=511  | SunDir=1 | Tilt=90[0;31mE (2198743) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2198743) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2198753) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=937 W=368  | SunDir=0 | Tilt=30[0;31mE (2213763) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2213763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2213773) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=647 W=2081  | SunDir=2 | Tilt=150[0;31mE (2228783) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2228783) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2228793) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2414 W=2026  | SunDir=0 | Tilt=30[0;31mE (2243803) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2243803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2243813) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=3406 W=1788  | SunDir=0 | Tilt=30[0;31mE (2258823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2258823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2258833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=740 W=479  | SunDir=0 | Tilt=30[0;31mE (2273843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2273843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2273853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=470 W=439  | SunDir=1 | Tilt=90[0;31mE (2288863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2288863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2288873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=781 W=273  | SunDir=0 | Tilt=30[0;31mE (2303883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2303883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2303893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=135 W=490  | SunDir=2 | Tilt=150[0;31mE (2318903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2318903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2318913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=631 W=137  | SunDir=0 | Tilt=30[0;31mE (2333923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2333923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2333933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=157 W=612  | SunDir=2 | Tilt=150[0;31mE (2348943) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2348943) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2348953) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=483 W=83  | SunDir=0 | Tilt=30[0;31mE (2363963) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2363963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2363973) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=271 W=308  | SunDir=1 | Tilt=90[0;31mE (2378983) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2378983) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2378993) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=642 W=287  | SunDir=0 | Tilt=30[0;31mE (2394003) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2394003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2394013) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=347 W=656  | SunDir=2 | Tilt=150[0;31mE (2409023) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2409023) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2409033) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=713 W=289  | SunDir=0 | Tilt=30[0;31mE (2424043) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2424043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2424053) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=738 W=334  | SunDir=0 | Tilt=30[0;31mE (2439063) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2439063) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2439073) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=747 W=336  | SunDir=0 | Tilt=30[0;31mE (2454083) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2454083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2454093) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=731 W=331  | SunDir=0 | Tilt=30[0;31mE (2469103) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2469103) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2469113) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=733 W=333  | SunDir=0 | Tilt=30[0;31mE (2484123) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2484123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2484133) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=329  | SunDir=0 | Tilt=30[0;31mE (2499143) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2499143) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2499153) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=336  | SunDir=0 | Tilt=30[0;31mE (2514163) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2514163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2514173) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=726 W=329  | SunDir=0 | Tilt=30[0;31mE (2529183) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2529183) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2529193) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=770 W=332  | SunDir=0 | Tilt=30[0;31mE (2544203) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2544203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2544213) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=766 W=329  | SunDir=0 | Tilt=30[0;31mE (2559223) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2559223) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2559233) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=759 W=336  | SunDir=0 | Tilt=30[0;31mE (2574243) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2574243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2574253) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=716 W=331  | SunDir=0 | Tilt=30[0;31mE (2589263) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2589263) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2589273) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=713 W=329  | SunDir=0 | Tilt=30[0;31mE (2604283) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2604283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2604293) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=722 W=329  | SunDir=0 | Tilt=30[0;31mE (2619303) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2619303) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2619313) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=723 W=336  | SunDir=0 | Tilt=30[0;31mE (2634323) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2634323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2634333) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=742 W=327  | SunDir=0 | Tilt=30[0;31mE (2649343) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2649343) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2649353) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=329  | SunDir=0 | Tilt=30[0;31mE (2664363) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2664363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2664373) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=704 W=327  | SunDir=0 | Tilt=30[0;31mE (2679383) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2679383) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2679393) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=752 W=417  | SunDir=0 | Tilt=30[0;31mE (2694403) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2694403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2694413) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=721 W=415  | SunDir=0 | Tilt=30[0;31mE (2709423) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2709423) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2709433) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=743 W=416  | SunDir=0 | Tilt=30[0;31mE (2724443) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2724443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2724453) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=752 W=418  | SunDir=0 | Tilt=30[0;31mE (2739463) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2739463) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2739473) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=726 W=411  | SunDir=0 | Tilt=30[0;31mE (2754483) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2754483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2754493) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=752 W=416  | SunDir=0 | Tilt=30[0;31mE (2769503) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2769503) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2769513) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=731 W=407  | SunDir=0 | Tilt=30[0;31mE (2784523) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2784523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2784533) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=747 W=411  | SunDir=0 | Tilt=30[0;31mE (2799543) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2799543) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2799553) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=411  | SunDir=0 | Tilt=30[0;31mE (2814563) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2814563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2814573) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=414  | SunDir=0 | Tilt=30[0;31mE (2829583) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2829583) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2829593) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=735 W=410  | SunDir=0 | Tilt=30[0;31mE (2844603) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2844603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2844613) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=733 W=403  | SunDir=0 | Tilt=30[0;31mE (2859623) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2859623) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2859633) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=723 W=402  | SunDir=0 | Tilt=30[0;31mE (2874643) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2874643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2874653) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=741 W=410  | SunDir=0 | Tilt=30[0;31mE (2889663) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2889663) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2889673) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=741 W=407  | SunDir=0 | Tilt=30[0;31mE (2904683) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2904683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2904693) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=734 W=402  | SunDir=0 | Tilt=30[0;31mE (2919703) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2919703) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2919713) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=735 W=415  | SunDir=0 | Tilt=30[0;31mE (2934723) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2934723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2934733) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=409  | SunDir=0 | Tilt=30[0;31mE (2949743) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2949743) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2949753) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=721 W=401  | SunDir=0 | Tilt=30[0;31mE (2964763) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2964763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2964773) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=720 W=442  | SunDir=0 | Tilt=30[0;31mE (2979783) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2979783) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2979793) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=714 W=404  | SunDir=0 | Tilt=30[0;31mE (2994803) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2994803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2994813) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=714 W=402  | SunDir=0 | Tilt=30[0;31mE (3009823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3009823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3009833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=713 W=410  | SunDir=0 | Tilt=30[0;31mE (3024843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3024843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3024853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=707 W=399  | SunDir=0 | Tilt=30[0;31mE (3039863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3039863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3039873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=753 W=406  | SunDir=0 | Tilt=30[0;31mE (3054883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3054883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3054893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=687 W=400  | SunDir=0 | Tilt=30[0;31mE (3069903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3069903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3069913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=400  | SunDir=0 | Tilt=30[0;31mE (3084923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3084923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3084933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=400  | SunDir=0 | Tilt=30[0;31mE (3099943) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3099943) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3099953) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=400  | SunDir=0 | Tilt=30[0;31mE (3114963) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3114963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3114973) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=693 W=401  | SunDir=0 | Tilt=30[0;31mE (3129983) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3129983) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3129993) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=703 W=403  | SunDir=0 | Tilt=30[0;31mE (3145003) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3145003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3145013) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=400  | SunDir=0 | Tilt=30[0;31mE (3160023) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3160023) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3160033) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=686 W=399  | SunDir=0 | Tilt=30[0;31mE (3175043) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3175043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3175053) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=691 W=401  | SunDir=0 | Tilt=30[0;31mE (3190063) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3190063) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3190073) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=695 W=400  | SunDir=0 | Tilt=30[0;31mE (3205083) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3205083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3205093) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=711 W=407  | SunDir=0 | Tilt=30[0;31mE (3220103) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3220103) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3220113) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=401  | SunDir=0 | Tilt=30[0;31mE (3235123) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3235123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3235133) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=685 W=398  | SunDir=0 | Tilt=30[0;31mE (3250143) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3250143) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3250153) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=398  | SunDir=0 | Tilt=30[0;31mE (3265163) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3265163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3265173) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=685 W=397  | SunDir=0 | Tilt=30[0;31mE (3280183) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3280183) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3280193) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=686 W=398  | SunDir=0 | Tilt=30[0;31mE (3295203) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3295203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3295213) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=400  | SunDir=0 | Tilt=30[0;31mE (3310223) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3310223) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3310233) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=684 W=397  | SunDir=0 | Tilt=30[0;31mE (3325243) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3325243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3325253) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=681 W=386  | SunDir=0 | Tilt=30[0;31mE (3340263) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3340263) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3340273) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=399  | SunDir=0 | Tilt=30[0;31mE (3355283) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3355283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3355293) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=684 W=398  | SunDir=0 | Tilt=30[0;31mE (3370303) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3370303) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3370313) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=716 W=400  | SunDir=0 | Tilt=30[0;31mE (3385323) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3385323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3385333) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=687 W=402  | SunDir=0 | Tilt=30[0;31mE (3400343) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3400343) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3400353) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=690 W=430  | SunDir=0 | Tilt=30[0;31mE (3415363) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3415363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3415373) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=699 W=400  | SunDir=0 | Tilt=30[0;31mE (3430383) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3430383) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3430393) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=719 W=397  | SunDir=0 | Tilt=30[0;31mE (3445403) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3445403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3445413) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=711 W=400  | SunDir=0 | Tilt=30[0;31mE (3460423) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3460423) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3460433) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=699 W=410  | SunDir=0 | Tilt=30[0;31mE (3475443) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3475443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3475453) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=686 W=439  | SunDir=0 | Tilt=30[0;31mE (3490463) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3490463) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3490473) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=439  | SunDir=0 | Tilt=30[0;31mE (3505483) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3505483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3505493) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=437  | SunDir=0 | Tilt=30[0;31mE (3520503) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3520503) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3520513) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=688 W=439  | SunDir=0 | Tilt=30[0;31mE (3535523) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3535523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3535533) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=707 W=480  | SunDir=0 | Tilt=30[0;31mE (3550543) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3550543) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3550553) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=730 W=430  | SunDir=0 | Tilt=30[0;31mE (3565563) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3565563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3565573) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=882 W=719  | SunDir=0 | Tilt=30[0;31mE (3580583) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3580583) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3580593) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=774 W=811  | SunDir=1 | Tilt=90[0;31mE (3595603) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3595603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3595613) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=784 W=656  | SunDir=1 | Tilt=90[0;31mE (3610623) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3610623) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3610633) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=855 W=789  | SunDir=1 | Tilt=90[0;31mE (3625643) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3625643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3625653) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1283 W=497  | SunDir=0 | Tilt=30[0;31mE (3640663) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3640663) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3640673) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=725 W=1579  | SunDir=2 | Tilt=150[0;31mE (3655683) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3655683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3655693) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1424 W=959  | SunDir=0 | Tilt=30[0;31mE (3670703) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3670703) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3670713) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=399 W=615  | SunDir=2 | Tilt=150[0;31mE (3685723) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3685723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3685733) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=816 W=335  | SunDir=0 | Tilt=30[0;31mE (3700743) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3700743) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3700753) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=430 W=807  | SunDir=2 | Tilt=150[0;31mE (3715763) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3715763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3715773) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=774 W=355  | SunDir=0 | Tilt=30[0;31mE (3730783) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3730783) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3730793) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=417 W=895  | SunDir=2 | Tilt=150[0;31mE (3745803) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3745803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3745813) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2112 W=1664  | SunDir=0 | Tilt=30[0;31mE (3760823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3760823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3760833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=461 W=449  | SunDir=1 | Tilt=90[0;31mE (3775843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3775843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3775853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1181 W=989  | SunDir=0 | Tilt=30[0;31mE (3790863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3790863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3790873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1461 W=2415  | SunDir=2 | Tilt=150[0;31mE (3805883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3805883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3805893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1473 W=797  | SunDir=0 | Tilt=30[0;31mE (3820903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3820903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3820913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=789 W=954  | SunDir=2 | Tilt=150[0;31mE (3835923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3835923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3835933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1159 W=653  | SunDir=0 | Tilt=30[0;31mE (3850943) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3850943) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3850953) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=654 W=635  | SunDir=1 | Tilt=90[0;31mE (3865963) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3865963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3865973) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1331 W=451  | SunDir=0 | Tilt=30[0;31mE (3880983) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3880983) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3880993) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=677 W=805  | SunDir=1 | Tilt=90[0;31mE (3896003) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3896003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3896013) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1145 W=579  | SunDir=0 | Tilt=30[0;31mE (3911023) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3911023) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3911033) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=565 W=699  | SunDir=1 | Tilt=90[0;31mE (3926043) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3926043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3926053) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1103 W=554  | SunDir=0 | Tilt=30[0;31mE (3941063) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3941063) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3941073) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=678 W=2193  | SunDir=2 | Tilt=150[0;31mE (3956083) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3956083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3956093) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2144 W=676  | SunDir=0 | Tilt=30[0;31mE (3971103) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3971103) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3971113) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=697 W=677  | SunDir=1 | Tilt=90[0;31mE (3986123) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3986123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3986133) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1043 W=464  | SunDir=0 | Tilt=30[0;31mE (4001143) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4001143) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4001153) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=690 W=784  | SunDir=1 | Tilt=90[0;31mE (4016163) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4016163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4016173) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1169 W=536  | SunDir=0 | Tilt=30[0;31mE (4031183) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4031183) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4031193) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=667 W=780  | SunDir=1 | Tilt=90[0;31mE (4046203) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4046203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4046213) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1007 W=501  | SunDir=0 | Tilt=30[0;31mE (4061223) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4061223) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4061233) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=659 W=802  | SunDir=1 | Tilt=90[0;31mE (4076243) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4076243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4076253) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=944 W=454  | SunDir=0 | Tilt=30[0;31mE (4091263) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4091263) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4091273) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=627 W=779  | SunDir=2 | Tilt=150[0;31mE (4106283) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4106283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4106293) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1147 W=592  | SunDir=0 | Tilt=30[0;31mE (4121303) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4121303) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4121313) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=1325 W=466  | SunDir=0 | Tilt=30[0;31mE (4136323) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4136323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (4136333) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+?�;c��?Loop running...
+E=4095 W=4095  | SunDir=1 | Tilt=90[0;31mE (5823) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5823) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (5833) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=4095 W=4095  | SunDir=1 | Tilt=90[0;31mE (20843) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (20853) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=3022 W=205  | SunDir=0 | Tilt=30[0;31mE (35863) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (35873) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=29 W=3760  | SunDir=2 | Tilt=150[0;31mE (50883) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (50883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (50893) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=3999 W=4095  | SunDir=1 | Tilt=90[0;31mE (65903) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (65903) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (65913) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
+Loop running...
+E=2769 W=1490  | SunDir=0 | Tilt=30[0;31mE (80923) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (80923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (80933) HTTP_CLIENT: Connection failed, sock < 0[0m
+
+ThingSpeak send failed: ESP_ERR_HTTP_CONNECT
