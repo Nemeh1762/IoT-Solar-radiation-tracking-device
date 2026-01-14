@@ -9,7 +9,6 @@ All collected readings are uploaded live to **ThingSpeak**.
 ---
 
 ## 🎯 Project Summary
-
 - **ESP32** controls the system  
 - **Two LDRs** detect which side receives more sunlight  
 - The system tilts/rotates toward the brighter direction  
@@ -22,24 +21,21 @@ All collected readings are uploaded live to **ThingSpeak**.
 ---
 
 ## 🎥 Project Demo Video
+📹 **Video link:**  
+👉 https://drive.google.com/file/d/1ld1btmJL3rvuPaAHK-2wN7EaDeImo01P/view?usp=sharing
 
-👉 Video link:  
-[
-](https://drive.google.com/file/d/1ld1btmJL3rvuPaAHK-2wN7EaDeImo01P/view?usp=sharing)
-
+---
 
 ## 🔗 Simulations & Dashboard
-
 - ▶️ **Wokwi Simulation:**  
-[
-](https://wokwi.com/projects/451123109909415937)-
-📊 **ThingSpeak Channel (Live data):**  
-[](https://thingspeak.mathworks.com/channels/3211422)
+  https://wokwi.com/projects/451123109909415937
 
-  
+- 📊 **ThingSpeak Channel (Live data):**  
+  https://thingspeak.mathworks.com/channels/3211422
+
+---
 
 ## 🧪 Hardware Used
-
 - ESP32 DevKit
 - 2x LDR modules (with internal resistors)
 - Solar cell
@@ -50,7 +46,6 @@ All collected readings are uploaded live to **ThingSpeak**.
 ---
 
 ## 📌 How It Works
-
 1. Each LDR reads light intensity.
 2. ESP32 compares the values:
    - If left > right → rotates toward left
@@ -62,7 +57,6 @@ All collected readings are uploaded live to **ThingSpeak**.
 ---
 
 ## 🛠 Firmware Flashing
-
 ```bash
 idf.py set-target esp32
 idf.py build
