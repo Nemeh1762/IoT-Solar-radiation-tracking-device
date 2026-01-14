@@ -1,77 +1,69 @@
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-S2 | ESP32-S3 |
-| ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- |
+# 🌞 IoT Solar Radiation Tracking Device
 
-# Blink Example
+This is a simple IoT project using an **ESP32** that
+automatically **tracks the strongest sunlight direction**
+using **two LDR sensors**, and measures solar energy
+from a small solar cell.  
+All collected readings are uploaded live to **ThingSpeak**.
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+---
 
-This example demonstrates how to blink a LED using GPIO or using the [led_strip](https://components.espressif.com/component/espressif/led_strip) component for the addressable LED, i.e. [WS2812](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf).
+## 🎯 Project Summary
 
-The `led_strip` is installed via [component manager](main/idf_component.yml).
+- **ESP32** controls the system  
+- **Two LDRs** detect which side receives more sunlight  
+- The system tilts/rotates toward the brighter direction  
+- A **solar cell** measures real solar power received  
+- Data is logged online in **ThingSpeak**
+- The whole circuit was first tested in **simulation** before hardware
 
-## How to Use Example
+> 🔧 No resistors were required because the LDR modules include built‑in resistors.
 
-Before project configuration and build, be sure to set the correct chip target using `idf.py set-target <chip_name>`.
+---
 
-### Hardware Required
+## 🎥 Project Demo Video
 
-* A development board with Espressif SoC (e.g., ESP32-DevKitC, ESP-WROVER-KIT, etc.)
-* A USB cable for Power supply and programming
+👉 Video link:  
+[
+](https://drive.google.com/file/d/1ld1btmJL3rvuPaAHK-2wN7EaDeImo01P/view?usp=sharing)
 
-Some development boards use an addressable LED instead of a regular one. These development boards include:
 
-| Board                | LED type             | Pin                  |
-| -------------------- | -------------------- | -------------------- |
-| ESP32-C3-DevKitC-1   | Addressable          | GPIO8                |
-| ESP32-C3-DevKitM-1   | Addressable          | GPIO8                |
-| ESP32-S2-DevKitM-1   | Addressable          | GPIO18               |
-| ESP32-S2-Saola-1     | Addressable          | GPIO18               |
-| ESP32-S3-DevKitC-1   | Addressable          | GPIO48               |
+## 🔗 Simulations & Dashboard
 
-See [Development Boards](https://www.espressif.com/en/products/devkits) for more information about it.
+- ▶️ **Wokwi Simulation:**  
+[
+](https://wokwi.com/projects/451123109909415937)-
+📊 **ThingSpeak Channel (Live data):**  
+[](https://thingspeak.mathworks.com/channels/3211422)
 
-### Configure the Project
+  
 
-Open the project configuration menu (`idf.py menuconfig`).
+## 🧪 Hardware Used
 
-In the `Example Configuration` menu:
+- ESP32 DevKit
+- 2x LDR modules (with internal resistors)
+- Solar cell
+- Jumper wires
+- Breadboard
+- Servo/motor if rotating panel
 
-* Select the LED type in the `Blink LED type` option.
-  * Use `GPIO` for regular LED blink.
-* Set the GPIO number used for the signal in the `Blink GPIO number` option.
-* Set the blinking period in the `Blink period in ms` option.
+---
 
-### Build and Flash
+## 📌 How It Works
 
-Run `idf.py -p PORT flash monitor` to build, flash and monitor the project.
+1. Each LDR reads light intensity.
+2. ESP32 compares the values:
+   - If left > right → rotates toward left
+   - If right > left → rotates toward right
+3. Solar cell voltage is measured
+4. ESP32 uploads readings to ThingSpeak every few seconds
+5. You can monitor data online in real time 🌍
 
-(To exit the serial monitor, type ``Ctrl-]``.)
+---
 
-See the [Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html) for full steps to configure and use ESP-IDF to build projects.
+## 🛠 Firmware Flashing
 
-## Example Output
-
-As you run the example, you will see the LED blinking, according to the previously defined period. For the addressable LED, you can also change the LED color by setting the `led_strip_set_pixel(led_strip, 0, 16, 16, 16);` (LED Strip, Pixel Number, Red, Green, Blue) with values from 0 to 255 in the [source file](main/blink_example_main.c).
-
-```text
-I (315) example: Example configured to blink addressable LED!
-I (325) example: Turning the LED OFF!
-I (1325) example: Turning the LED ON!
-I (2325) example: Turning the LED OFF!
-I (3325) example: Turning the LED ON!
-I (4325) example: Turning the LED OFF!
-I (5325) example: Turning the LED ON!
-I (6325) example: Turning the LED OFF!
-I (7325) example: Turning the LED ON!
-I (8325) example: Turning the LED OFF!
-```
-
-Note: The color order could be different according to the LED model.
-
-The pixel number indicates the pixel position in the LED strip. For a single LED, use 0.
-
-## Troubleshooting
-
-* If the LED isn't blinking, check the GPIO or the LED type selection in the `Example Configuration` menu.
-
-For any technical queries, please open an [issue](https://github.com/espressif/esp-idf/issues) on GitHub. We will get back to you soon.
+```bash
+idf.py set-target esp32
+idf.py build
+idf.py -p PORT flash monitor
